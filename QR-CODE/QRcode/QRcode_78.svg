@@ -1,0 +1,206 @@
+<svg width="220" height="220" xmlns="http://www.w3.org/2000/svg">
+<metadata>
+	<dimension_matrice_cellule>5</dimension_matrice_cellule>
+	<protocole>2</protocole>
+</metadata>
+<polygon points="-1,19 20,18 10,1" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="0"/>
+<path d="M-1,19 20,18 10,1 Z" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="0"/>
+<polygon points="42,16 25,2 21,21" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="0"/>
+<path d="M42,16 25,2 21,21 Z" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="0"/>
+<polygon points="21,27 0,27 8,45" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="0"/>
+<path d="M21,27 0,27 8,45 Z" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="0"/>
+<polygon points="43,34 24,22 22,42" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="0"/>
+<path d="M43,34 24,22 22,42 Z" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="0"/>
+<polygon points="36,14 57,22 55,2" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="1"/>
+<path d="M36,14 57,22 55,2 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="1"/>
+<polygon points="83,11 61,4 65,24" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="1"/>
+<path d="M83,11 61,4 65,24 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="1"/>
+<polygon points="61,27 39,27 48,45" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="1"/>
+<path d="M61,27 39,27 48,45 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="1"/>
+<polygon points="79,42 72,21 58,35" fill="#0000ff" stroke="black" stroke-width="1" data-i="0" data-j="1"/>
+<path d="M79,42 72,21 58,35 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="0" data-j="1"/>
+<polygon points="83,1 84,23 101,14" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="2"/>
+<path d="M83,1 84,23 101,14 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="2"/>
+<polygon points="97,7 112,25 120,6" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="2"/>
+<path d="M97,7 112,25 120,6 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="2"/>
+<polygon points="84,45 101,31 83,22" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="2"/>
+<path d="M84,45 101,31 83,22 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="2"/>
+<polygon points="96,35 117,42 115,22" fill="#00ff00" stroke="black" stroke-width="1" data-i="0" data-j="2"/>
+<path d="M96,35 117,42 115,22 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="0" data-j="2"/>
+<polygon points="116,12 135,23 137,3" fill="#00ff00" stroke="black" stroke-width="1" data-i="0" data-j="3"/>
+<path d="M116,12 135,23 137,3 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="0" data-j="3"/>
+<polygon points="154,0 138,16 157,23" fill="#0000ff" stroke="black" stroke-width="1" data-i="0" data-j="3"/>
+<path d="M154,0 138,16 157,23 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="0" data-j="3"/>
+<polygon points="118,26 130,45 140,28" fill="#0000ff" stroke="black" stroke-width="1" data-i="0" data-j="3"/>
+<path d="M118,26 130,45 140,28 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="0" data-j="3"/>
+<polygon points="161,25 138,28 150,45" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="3"/>
+<path d="M161,25 138,28 150,45 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="0" data-j="3"/>
+<polygon points="160,22 181,15 167,1" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="4"/>
+<path d="M160,22 181,15 167,1 Z" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="4"/>
+<polygon points="186,0 181,22 201,17" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="4"/>
+<path d="M186,0 181,22 201,17 Z" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="4"/>
+<polygon points="183,32 162,23 163,43" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="4"/>
+<path d="M183,32 162,23 163,43 Z" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="4"/>
+<polygon points="194,20 178,36 197,42" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="4"/>
+<path d="M194,20 178,36 197,42 Z" fill="#000000" stroke="black" stroke-width="1" data-i="0" data-j="4"/>
+<polygon points="-1,47 11,65 20,47" fill="#00ff00" stroke="black" stroke-width="1" data-i="1" data-j="0"/>
+<path d="M-1,47 11,65 20,47 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="1" data-j="0"/>
+<polygon points="35,41 18,55 36,63" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="0"/>
+<path d="M35,41 18,55 36,63 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="0"/>
+<polygon points="23,71 2,64 4,84" fill="#0000ff" stroke="black" stroke-width="1" data-i="1" data-j="0"/>
+<path d="M23,71 2,64 4,84 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="1" data-j="0"/>
+<polygon points="26,86 41,69 22,64" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="0"/>
+<path d="M26,86 41,69 22,64 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="0"/>
+<polygon points="58,63 53,41 38,54" fill="#00ff00" stroke="black" stroke-width="1" data-i="1" data-j="1"/>
+<path d="M58,63 53,41 38,54 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="1" data-j="1"/>
+<polygon points="83,51 62,44 64,63" fill="#0000ff" stroke="black" stroke-width="1" data-i="1" data-j="1"/>
+<path d="M83,51 62,44 64,63 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="1" data-j="1"/>
+<polygon points="56,84 55,62 38,72" fill="#ffff00" stroke="black" stroke-width="1" data-i="1" data-j="1"/>
+<path d="M56,84 55,62 38,72 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="1" data-j="1"/>
+<polygon points="59,81 81,77 69,61" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="1"/>
+<path d="M59,81 81,77 69,61 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="1"/>
+<polygon points="76,55 98,62 95,42" fill="#00ff00" stroke="black" stroke-width="1" data-i="1" data-j="2"/>
+<path d="M76,55 98,62 95,42 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="1" data-j="2"/>
+<polygon points="98,59 120,59 111,41" fill="#0000ff" stroke="black" stroke-width="1" data-i="1" data-j="2"/>
+<path d="M98,59 120,59 111,41 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="1" data-j="2"/>
+<polygon points="93,86 98,64 78,69" fill="#ffff00" stroke="black" stroke-width="1" data-i="1" data-j="2"/>
+<path d="M93,86 98,64 78,69 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="1" data-j="2"/>
+<polygon points="121,66 99,68 109,85" fill="#ffff00" stroke="black" stroke-width="1" data-i="1" data-j="2"/>
+<path d="M121,66 99,68 109,85 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="1" data-j="2"/>
+<polygon points="131,66 138,45 119,48" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="3"/>
+<path d="M131,66 138,45 119,48 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="3"/>
+<polygon points="154,40 138,56 157,62" fill="#0000ff" stroke="black" stroke-width="1" data-i="1" data-j="3"/>
+<path d="M154,40 138,56 157,62 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="1" data-j="3"/>
+<polygon points="121,62 126,84 141,72" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="3"/>
+<path d="M121,62 126,84 141,72 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="3"/>
+<polygon points="140,82 161,75 147,61" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="3"/>
+<path d="M140,82 161,75 147,61 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="1" data-j="3"/>
+<polygon points="180,60 170,41 158,57" fill="#00ff00" stroke="black" stroke-width="1" data-i="1" data-j="4"/>
+<path d="M180,60 170,41 158,57 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="1" data-j="4"/>
+<polygon points="190,40 179,59 199,60" fill="#0000ff" stroke="black" stroke-width="1" data-i="1" data-j="4"/>
+<path d="M190,40 179,59 199,60 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="1" data-j="4"/>
+<polygon points="165,60 162,82 181,76" fill="#ffff00" stroke="black" stroke-width="1" data-i="1" data-j="4"/>
+<path d="M165,60 162,82 181,76 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="1" data-j="4"/>
+<polygon points="181,62 186,84 201,72" fill="#ffff00" stroke="black" stroke-width="1" data-i="1" data-j="4"/>
+<path d="M181,62 186,84 201,72 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="1" data-j="4"/>
+<polygon points="17,104 14,82 -2,92" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="0"/>
+<path d="M17,104 14,82 -2,92 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="0"/>
+<polygon points="39,103 32,81 18,95" fill="#0000ff" stroke="black" stroke-width="1" data-i="2" data-j="0"/>
+<path d="M39,103 32,81 18,95 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="2" data-j="0"/>
+<polygon points="10,100 0,120 20,120" fill="#ffff00" stroke="black" stroke-width="1" data-i="2" data-j="0"/>
+<path d="M10,100 0,120 20,120 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="2" data-j="0"/>
+<polygon points="18,105 29,125 41,108" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="0"/>
+<path d="M18,105 29,125 41,108 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="0"/>
+<polygon points="36,90 54,104 58,84" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="1"/>
+<path d="M36,90 54,104 58,84 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="1"/>
+<polygon points="74,80 58,95 76,103" fill="#0000ff" stroke="black" stroke-width="1" data-i="2" data-j="1"/>
+<path d="M74,80 58,95 76,103 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="2" data-j="1"/>
+<polygon points="60,105 38,109 50,125" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="1"/>
+<path d="M60,105 38,109 50,125 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="1"/>
+<polygon points="64,101 63,123 81,115" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="1"/>
+<path d="M64,101 63,123 81,115 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="1"/>
+<polygon points="76,95 98,102 94,82" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="2"/>
+<path d="M76,95 98,102 94,82 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="2"/>
+<polygon points="116,81 98,94 115,104" fill="#0000ff" stroke="black" stroke-width="1" data-i="2" data-j="2"/>
+<path d="M116,81 98,94 115,104 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="2" data-j="2"/>
+<polygon points="87,126 101,108 81,104" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="2"/>
+<path d="M87,126 101,108 81,104 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="2"/>
+<polygon points="98,119 120,119 111,101" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="2"/>
+<path d="M98,119 120,119 111,101 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="2"/>
+<polygon points="130,80 119,99 139,100" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="3"/>
+<path d="M130,80 119,99 139,100 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="2" data-j="3"/>
+<polygon points="136,93 156,103 156,83" fill="#0000ff" stroke="black" stroke-width="1" data-i="2" data-j="3"/>
+<path d="M136,93 156,103 156,83 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="2" data-j="3"/>
+<polygon points="134,100 118,116 137,122" fill="#ffff00" stroke="black" stroke-width="1" data-i="2" data-j="3"/>
+<path d="M134,100 118,116 137,122 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="2" data-j="3"/>
+<polygon points="156,125 155,102 138,111" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="3"/>
+<path d="M156,125 155,102 138,111 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="3"/>
+<polygon points="160,102 181,96 168,81" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="4"/>
+<path d="M160,102 181,96 168,81 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="4"/>
+<polygon points="190,80 179,99 199,100" fill="#0000ff" stroke="black" stroke-width="1" data-i="2" data-j="4"/>
+<path d="M190,80 179,99 199,100 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="2" data-j="4"/>
+<polygon points="156,110 174,124 178,104" fill="#ffff00" stroke="black" stroke-width="1" data-i="2" data-j="4"/>
+<path d="M156,110 174,124 178,104 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="2" data-j="4"/>
+<polygon points="192,126 198,105 178,108" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="4"/>
+<path d="M192,126 198,105 178,108 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="2" data-j="4"/>
+<polygon points="9,146 20,127 0,126" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="0"/>
+<path d="M9,146 20,127 0,126 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="0"/>
+<polygon points="32,120 18,137 38,142" fill="#ffff00" stroke="black" stroke-width="1" data-i="3" data-j="0"/>
+<path d="M32,120 18,137 38,142 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="3" data-j="0"/>
+<polygon points="5,166 21,150 2,143" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="0"/>
+<path d="M5,166 21,150 2,143 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="0"/>
+<polygon points="16,152 36,163 37,143" fill="#ffff00" stroke="black" stroke-width="1" data-i="3" data-j="0"/>
+<path d="M16,152 36,163 37,143 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="3" data-j="0"/>
+<polygon points="50,146 59,126 39,126" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="1"/>
+<path d="M50,146 59,126 39,126 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="1"/>
+<polygon points="70,120 60,140 80,140" fill="#ffff00" stroke="black" stroke-width="1" data-i="3" data-j="1"/>
+<path d="M70,120 60,140 80,140 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="3" data-j="1"/>
+<polygon points="44,141 43,163 61,155" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="1"/>
+<path d="M44,141 43,163 61,155 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="1"/>
+<polygon points="66,166 81,149 62,144" fill="#0000ff" stroke="black" stroke-width="1" data-i="3" data-j="1"/>
+<path d="M66,166 81,149 62,144 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="3" data-j="1"/>
+<polygon points="101,139 88,121 79,139" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="2"/>
+<path d="M101,139 88,121 79,139 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="2"/>
+<polygon points="96,131 115,143 117,124" fill="#0000ff" stroke="black" stroke-width="1" data-i="3" data-j="2"/>
+<path d="M96,131 115,143 117,124 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="3" data-j="2"/>
+<polygon points="100,161 91,141 78,156" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="2"/>
+<path d="M100,161 91,141 78,156 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="2"/>
+<polygon points="106,140 102,162 121,157" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="2"/>
+<path d="M106,140 102,162 121,157 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="2"/>
+<polygon points="116,136 138,141 134,122" fill="#ffff00" stroke="black" stroke-width="1" data-i="3" data-j="3"/>
+<path d="M116,136 138,141 134,122 Z" fill="#ffff00" stroke="black" stroke-width="1" data-i="3" data-j="3"/>
+<polygon points="162,136 146,121 140,141" fill="#0000ff" stroke="black" stroke-width="1" data-i="3" data-j="3"/>
+<path d="M162,136 146,121 140,141 Z" fill="#0000ff" stroke="black" stroke-width="1" data-i="3" data-j="3"/>
+<polygon points="135,165 136,143 118,151" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="3"/>
+<path d="M135,165 136,143 118,151 Z" fill="#00ff00" stroke="black" stroke-width="1" data-i="3" data-j="3"/>
+<polygon points="163,152 142,143 144,163" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="3"/>
+<path d="M163,152 142,143 144,163 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="3"/>
+<polygon points="181,140 169,121 159,138" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="4"/>
+<path d="M181,140 169,121 159,138 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="4"/>
+<polygon points="194,145 196,123 178,130" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="4"/>
+<path d="M194,145 196,123 178,130 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="4"/>
+<polygon points="178,163 172,141 158,155" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="4"/>
+<path d="M178,163 172,141 158,155 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="4"/>
+<polygon points="190,166 199,146 179,147" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="4"/>
+<path d="M190,166 199,146 179,147 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="3" data-j="4"/>
+<polygon points="13,186 17,164 -1,169" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="0"/>
+<path d="M13,186 17,164 -1,169 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="0"/>
+<polygon points="31,186 38,165 19,168" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="0"/>
+<path d="M31,186 38,165 19,168 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="0"/>
+<polygon points="9,206 20,186 0,186" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="0"/>
+<path d="M9,206 20,186 0,186 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="0"/>
+<polygon points="35,181 18,195 36,203" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="0"/>
+<path d="M35,181 18,195 36,203 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="0"/>
+<polygon points="60,165 38,169 50,185" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="1"/>
+<path d="M60,165 38,169 50,185 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="1"/>
+<polygon points="65,160 63,183 81,175" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="1"/>
+<path d="M65,160 63,183 81,175 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="1"/>
+<polygon points="54,180 38,196 57,203" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="1"/>
+<path d="M54,180 38,196 57,203 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="1"/>
+<polygon points="60,184 67,205 81,190" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="1"/>
+<path d="M60,184 67,205 81,190 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="1"/>
+<polygon points="81,162 86,184 101,172" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="2"/>
+<path d="M81,162 86,184 101,172 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="2"/>
+<polygon points="96,173 116,183 116,163" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="2"/>
+<path d="M96,173 116,183 116,163 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="2"/>
+<polygon points="91,180 79,198 98,201" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="2"/>
+<path d="M91,180 79,198 98,201 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="2"/>
+<polygon points="121,187 99,187 108,205" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="2"/>
+<path d="M121,187 99,187 108,205 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="2"/>
+<polygon points="130,186 139,165 119,167" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="3"/>
+<path d="M130,186 139,165 119,167 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="3"/>
+<polygon points="157,184 154,162 137,172" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="3"/>
+<path d="M157,184 154,162 137,172 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="3"/>
+<polygon points="130,206 139,186 119,187" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="3"/>
+<path d="M130,206 139,186 119,187 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="3"/>
+<polygon points="159,183 138,191 152,205" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="3"/>
+<path d="M159,183 138,191 152,205 Z" fill="#ff0000" stroke="black" stroke-width="1" data-i="4" data-j="3"/>
+<polygon points="183,173 163,163 162,183" fill="#000000" stroke="black" stroke-width="1" data-i="4" data-j="4"/>
+<path d="M183,173 163,163 162,183 Z" fill="#000000" stroke="black" stroke-width="1" data-i="4" data-j="4"/>
+<polygon points="181,163 186,184 201,171" fill="#000000" stroke="black" stroke-width="1" data-i="4" data-j="4"/>
+<path d="M181,163 186,184 201,171 Z" fill="#000000" stroke="black" stroke-width="1" data-i="4" data-j="4"/>
+<polygon points="165,180 162,202 181,196" fill="#000000" stroke="black" stroke-width="1" data-i="4" data-j="4"/>
+<path d="M165,180 162,202 181,196 Z" fill="#000000" stroke="black" stroke-width="1" data-i="4" data-j="4"/>
+<polygon points="201,199 188,181 179,199" fill="#000000" stroke="black" stroke-width="1" data-i="4" data-j="4"/>
+<path d="M201,199 188,181 179,199 Z" fill="#000000" stroke="black" stroke-width="1" data-i="4" data-j="4"/>
+</svg>
