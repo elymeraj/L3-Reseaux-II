@@ -64,13 +64,9 @@ Le serveur fonctionne de manière permanente, souvent sous forme de démon (proc
 
 Le protocole TCP offre un service de communication connecté, assurant la fiabilité par la détection et la correction des pertes, la gestion des duplications et le contrôle de flux, garantissant ainsi la livraison des données dans l'ordre. En revanche, le protocole UDP fonctionne en mode non connecté, permettant la communication avec un ou plusieurs destinataires sans garantir la fiabilité ni l'ordre des messages, ce qui le rend plus rapide mais moins sûr pour certaines applications.
 
-## Fiabilité de TCP (1)
+## Fiabilité de TCP 
 
-La fiabilité de TCP repose sur la numérotation des octets lors de l'expédition, où chaque bloc d'octets est assigné à un numéro de séquence (seq) et un numéro d'acquittement (ack) correspondants, initialisés à l'établissement de la connexion. Lors de la réception, les numéros sont vérifiés : un numéro reçu supérieur au numéro attendu indique une perte, un inférieur indique une duplication, et un égal indique une transmission correcte. Pour corriger les erreurs, TCP ignore les duplications et retransmet les segments perdus pour garantir une transmission fiable.
-
-## Fiabilité de TCP (2)
-
-La gestion de la fiabilité en TCP distingue les paquets perdus des paquets retardés. TCP peut acquitter plusieurs segments en une fois pour optimiser la bande passante et utilise des temporisations (timers) pour détecter les pertes. Un timer est créé à chaque envoi, et si l'acquittement n'arrive pas avant la fin du timer, le segment est considéré comme perdu. Le calcul du timer doit être précis : trop court, il provoque de nombreuses retransmissions inutiles; trop long, il ralentit la détection des pertes. Le timer est recalculé périodiquement, basé sur le temps de trajet moyen (RTT) et sa variance.
+La fiabilité du protocole TCP est assurée par plusieurs mécanismes. Lors de l'expédition, les octets de l'utilisateur sont numérotés par séquence dans des PDU-TCP, permettant à l'entité-TCP d'initialiser et de calculer les numéros de séquence (seq) et d'acquittement (ack). À la réception, les numéros sont vérifiés pour détecter des pertes, des duplications ou des réceptions correctes. Les duplications sont ignorées et les pertes entraînent la retransmission des PDU. Pour différencier un paquet perdu d'un paquet en retard, TCP utilise des temporisations (timers). Un acquittement (ack) avant l'expiration du timer indique que le segment a été reçu; sinon, le segment est considéré comme perdu. Le timer est recalculé périodiquement en fonction du délai moyen et de la variance pour optimiser les retransmissions. Le contrôle de flux prévient l'envoi de plus de données que le récepteur peut gérer, en utilisant le champ "window size" pour indiquer la capacité de réception​
 
 ## Contrôle de Flux en TCP
 
@@ -175,11 +171,7 @@ IPv6 introduit différents types d'adresses : **unicast** pour un destinataire u
 
 ## Adressage IPv6
 
-Les adresses IPv6 sont représentées en notation hexadécimale, regroupées par 4 chiffres séparés par des deux-points, par exemple : **FEDC:E323:A65A:95F5:63D4:08BB:76F5:A234**. Les sous-réseaux disparaissent au profit de la taille du préfixe indiquée par ‘/’, par exemple : **2F45:EE34:C23E::/48**. Les zéros peuvent être omis pour simplifier l’écriture, par exemple : **2001:0:0:0:0:342D:342F:FF45** peut être écrit **2001::342D:342F:FF45**.
-
-L'adresse **unicast** utilise **64 bits** pour le réseau et **64 bits** pour l'hôte. Les premiers **48 bits** sont pour le préfixe global de routage, gérés par des entités comme IANA et RIPE-NCC, et les **16 bits** suivants pour le réseau d'entreprise. Les **64 bits** restants identifient l'interface de l'hôte, souvent dérivés de l'adresse MAC, ce qui simplifie l’autoconfiguration.
-
-Les adresses **multicast IPv6** comprennent un indicateur (8 bits), un drapeau (4 bits), une visibilité (4 bits), et un identifiant de groupe (112 bits). Par exemple, **FF01::1** désigne le multicast pour les machines sur le même médium (node local), et **FF05::2** désigne les routeurs sur le même site (site-local). Les différents niveaux de visibilité (**node-local, link-local, site-local, organization-local, global**) définissent la portée de l'adresse multicast.
+L'adressage IPv6 utilise des adresses de 128 bits, écrites en hexadécimal et séparées par des deux-points, par exemple, FEDC:E323:A65A:95F5:63D4:08BB:76F5:A234. Les sous-réseaux disparaissent, remplacés par des tailles de préfixe (ex. /48). Les adresses unicast sont constituées de 64 bits pour le réseau (dont 48 bits pour le préfixe global et 16 bits pour le réseau d'entreprise) et de 64 bits pour l'hôte. L'adresse commence souvent par 2001 et intègre l'adresse MAC modifiée. Les adresses multicast incluent un indicateur, un drapeau, une visibilité, et un identifiant de groupe (ex. FF01::1 pour le node local et les machines)​
 
 # Chapitre II
 
