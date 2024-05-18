@@ -185,5 +185,127 @@ L'adresse **unicast** utilise **64 bits** pour le réseau et **64 bits** pour l'
 
 Les adresses **multicast IPv6** comprennent un indicateur (8 bits), un drapeau (4 bits), une visibilité (4 bits), et un identifiant de groupe (112 bits). Par exemple, **FF01::1** désigne le multicast pour les machines sur le même médium (node local), et **FF05::2** désigne les routeurs sur le même site (site-local). Les différents niveaux de visibilité (**node-local, link-local, site-local, organization-local, global**) définissent la portée de l'adresse multicast.
 
+# Chapitre II
+
+Ce chapitre traite du transfert de données sur un réseau local en se concentrant sur la couche 2, qui comprend la couche MAC (Medium Access Control) et la couche LLC (Logical Link Control). Il aborde également les codes détecteurs et correcteurs d’erreurs, les protocoles filaires comme Ethernet et les protocoles non filaires tels que **802.15**, **802.16** et **802.11**.
+
+## La Couche MAC - Généralité (1)
+
+La couche **MAC (Medium Access Control)** permet la transmission de bits entre systèmes raccordés au même médium, tel que les câbles en paire torsadée, la fibre optique, ou les ondes radio. Les équipements typiques incluent les **switches**, les **hubs** et les **points d’accès**. La couche MAC utilise différents protocoles comme **CSMA/CD** pour Ethernet, et des bus ou jetons pour d'autres types de réseaux.
+
+## Couche 2 - Généralité
+
+La couche 2 gère le transfert fiable de données entre systèmes sur un même réseau local. Elle s'occupe de la numérotation des trames, de la détection et de la correction des erreurs, et de la régulation du trafic en utilisant des acquittements. Chaque système sur le réseau est identifié de manière unique par une **adresse MAC**, permettant de trouver facilement le destinataire des trames envoyées.
+
+## L’Adresse MAC
+
+L'adresse **MAC (Media Access Control)** est une identification unique au niveau de la couche 2, composée de **6 octets**. Les trois premiers octets représentent l'**Organizationally Unique Identifier (OUI)**, attribué à l'entreprise, et les trois octets suivants sont un numéro unique pour l’entreprise. Certaines adresses MAC peuvent être de groupe ou de broadcast. Cette adresse permet d’identifier de manière unique un ordinateur sur un réseau local. Pour vérifier une adresse MAC sous Windows, utilisez la commande **ipconfig /all** dans l'invite de commande.
+
+## La Couche MAC - Généralité (2)
+
+Chaque système sur le réseau a une entité MAC qui reçoit les demandes d'émission, décide quand émettre et écoute les transmissions pour décider de recevoir ou non. Si un système est connecté à deux supports différents, il contient une entité MAC pour chaque médium et une entité utilisateur de couches MAC liée à chaque médium. La communication entre deux couches MAC est possible uniquement si le système est raccordé aux deux supports, souvent en utilisant un routeur qui opère au niveau 3.
+
+## Le Traitement des Erreurs (1)
+
+Le traitement des erreurs est crucial pour maintenir l'intégrité des données transmises. Le taux d'erreur (**Te**) est défini comme le nombre de bits erronés divisé par le nombre de bits transmis pendant une période d'observation, généralement compris entre **10^-9** et **10^-3**. Les erreurs se produisent souvent en rafale. Le principe de base consiste à utiliser un vocabulaire commun entre l'émetteur et le récepteur, où l'émetteur n'envoie que des mots valides. Si le récepteur reçoit un mot non valide, il détecte une ou plusieurs erreurs.
+
+### Stratégie de Traitement d'une Erreur
+
+Lorsqu'une erreur est détectée, plusieurs stratégies peuvent être adoptées. Si les erreurs sont acceptables, aucune correction n'est tentée. Pour les erreurs inacceptables, elles peuvent être signalées ou non. Si une erreur est détectée, une procédure de détection et de correction est mise en œuvre. Si la correction échoue, l'erreur est signalée; si elle réussit, l'erreur est corrigée. Le pourcentage d'erreurs détectées et corrigées est mesuré pour évaluer l'efficacité de ces procédures.
+
+## Le Traitement des Erreurs (2)
+
+Pour gérer les erreurs, on peut utiliser des techniques comme l'écho, la répétition et la redondance. Typiquement, on envoie **m bits** de données et **r bits** de redondance, formant un message de longueur **m+r**. Il existe deux stratégies : utiliser suffisamment de redondance pour permettre au récepteur de reconstituer les données (**codes correcteurs d'erreurs**) ou utiliser juste assez de redondance pour détecter les erreurs et demander une retransmission (**codes détecteurs d'erreurs**).
+
+### Distance de Hamming
+
+La **distance de Hamming** est un critère pour évaluer le pouvoir détecteur et correcteur d'un code. Elle est définie comme le nombre de positions avec des valeurs distinctes entre deux mots. Par exemple, la distance de Hamming entre **110011** et **101010** est **3**. La distance de Hamming d'un code est le minimum des distances entre tous les mots du code. Par exemple, pour les mots **{110, 101, 011}**, la distance est **2**.
+
+### Pouvoir Détecteur d'un Code
+
+Une erreur d'ordre **k** se produit lorsqu'un mot émis diffère par **k bits** du mot reçu. Pour détecter une erreur d'ordre **1**, la distance de Hamming du code doit être de **2**, ce qui empêche une erreur simple de changer un mot du code en un autre mot du code. Pour détecter une erreur d'ordre **k**, la distance de Hamming doit être de **k+1**.
+
+### Pouvoir Correcteur d'un Code
+
+Pour corriger une erreur d'ordre **1**, une distance de Hamming de **2** n'est pas suffisante, il faut une distance de **3**. Si la distance de Hamming est **2**, une erreur simple peut produire un mot se situant exactement à mi-chemin entre deux mots du code, rendant la correction impossible. Pour corriger une erreur d'ordre **k**, il faut une distance de Hamming de **2k+1**.
+
+### Code Détecteur d'Erreurs (1)
+
+Les codes de contrôle de parité sont utilisés pour détecter les erreurs. Le code **VCR (Vertical Redundancy Check)** ajoute un bit de parité pour que le nombre de 1 dans les données envoyées soit pair, offrant une distance de Hamming de **2**, ce qui permet de détecter une erreur. Le code **LCR (Longitudinal Redundancy Check)** combine parité verticale et horizontale, offrant une distance de Hamming de **3**, permettant de détecter et corriger des erreurs simples.
+
+### Code Détecteur d'Erreurs (2)
+
+Les codes polynomiaux, comme le **CRC (Cyclic Redundancy Check)** et le **FCS (Frame Control Check)**, utilisent des polynômes à coefficients binaires pour représenter des séquences de bits. Le polynôme générateur (**G(x)**) détermine le code, et le message (**M(x)**) est encodé en ajoutant des bits de redondance. Par exemple, pour un message M(x) et un générateur G(x) comme **G(x)=x^16 + x^12 + x^5 + 1 (CRC-CCITT)**, le message est multiplié par **x^r** et divisé par **G(x)** pour obtenir le reste **R(x)**, formant le message encodé **N(x) = M(x) * x^r + R(x)**.
+
+### Code Détecteur d'Erreurs (3)
+
+Pour décoder, on divise le message reçu par le polynôme générateur **G(x)** et vérifie si le reste est nul. Si c'est le cas, aucune erreur n'a été détectée. Les opérations mathématiques en base 2 sont utilisées pour l'addition et la soustraction, où **1 + 1** et **1 - 1** donnent **0**, et **0 + 1** et **0 - 1** donnent **1**.
+
+### Exemple
+
+Pour illustrer, considérons **G(x) = x^2 + 1** (représenté par **101** en binaire) et un message à envoyer **M(x) = 1100** (x^3 + x^2). On multiplie M(x) par **x^2** pour obtenir **x^5 + x^4** (110000 en binaire). On divise **110000** par **101** :
+
+`110000 ÷ 101 = quotient 110, reste 11`
+
+Le message envoyé est donc **110011**. Pour vérifier, on divise **110011** par **101** :
+
+`110011 ÷ 101 = quotient 110, reste 00 (pas d'erreur)`
+
+Le reste de **00** indique que le message est correct et n'a pas subi d'erreurs pendant la transmission.
+### Protocole de Niveau 2
+
+#### IEEE 802.3, Ethernet - II
+
+Le protocole **Ethernet**, inventé par Xerox PARC en 1973, utilise des connecteurs **RJ45** avec 8 broches pour les connexions électriques. Pour des débits de **10/100 Mb/s**, les broches **1-2** et **3-6** sont utilisées, tandis que les débits de **1 Gb/s** utilisent toutes les 8 broches. Les câbles peuvent être droits ou croisés, bien que le décroisement puisse maintenant se faire au niveau logiciel grâce à la détection de la polarité du signal. La topologie Ethernet est passée de bus à maillage, avec une méthode d'accès par compétition utilisant **CSMA/CD (Carrier Sense Multiple Access/Collision Detection)**.
+
+#### IEEE 802.3, Ethernet - II (Topologie et Méthode d'Accès)
+
+La méthode d'accès en bus implique que les dispositifs écoutent le médium et émettent lorsque celui-ci est libre. En cas de collision, une réémission est tentée après un délai. Avec une topologie maillée, le **full-duplex** permet d'éviter les collisions, ce qui améliore les performances. Les débits disponibles vont de **10 Mb/s** à **10 Gb/s**.
+
+#### IEEE 802.3, Ethernet - II (Trame)
+
+Les trames Ethernet contiennent plusieurs champs : la synchronisation, l'adresse **MAC** du destinataire, l'adresse **MAC** de l'expéditeur, le type de trame, les données et un champ de contrôle (**FCS**) pour la détection d'erreurs. En half-duplex, les hubs sont utilisés, tandis que le full-duplex utilise des switches (commutateurs).
+
+#### Exemple Ethernet - II
+
+Une trame Ethernet - II est représentée en hexadécimal, par exemple :
+
+```
+AA AA AA AA AA AA AA AB 08 00 2b 91 b0 d0 00 e0
+b1 45 12 06 08 00 45 00 00 32 0e f1 00 00 39 06 5e
+65 c1 37 5f 01 c1 36 33 01 0f 85 00 15 3f b5 1b 97 1f
+24 de b9 50 18 40 00 c6 fa 00 00 55 53 45 52 20 6d
+63 76 0d 0a 36 A2 5D 24
+```
+
+Les champs incluent l'adresse **MAC** du destinataire, l'adresse **MAC** de l'expéditeur, le type de trame, les données, et le champ de contrôle **FCS**, utilisé pour vérifier l'intégrité des données transmises.
+
+### LAN
+
+Un **LAN (Local Area Network)** est un ensemble d'équipements reliés par des switches, hubs ou points d'accès. Les débits peuvent varier de **10 Mb/s** à **1 Gb/s** ou plus. Un **switch** permet une connexion point à point en full-duplex et apprend les adresses MAC pour acheminer les trames correctement. Il permet également de sécuriser le réseau en limitant les trames aux liens destinataires spécifiques, bien qu'il puisse être vulnérable à la saturation de la table des adresses MAC ou au vol d'adresses MAC. Des mesures de sécurité, comme la sécurisation des ports du switch, sont donc nécessaires.
+
+### Un Switch
+
+Un **switch** permet la connexion point à point en mode **full-duplex**, ce qui élimine les collisions et améliore les performances réseau. Il apprend les adresses **MAC** des dispositifs connectés et utilise une **table d'adresses MAC** pour acheminer les trames uniquement vers le destinataire approprié. Cela réduit le trafic inutile et augmente la sécurité du réseau, car les données ne sont transmises que sur le lien destinataire. Cependant, la table d'adresses MAC peut se saturer, et il existe un risque de vol d'adresses MAC. Pour éviter ces problèmes, les ports du switch peuvent être sécurisés.
+
+### Protocole de Niveau 2 Non Filaire
+
+#### Généralités
+
+Les protocoles de niveau 2 non filaires permettent la communication sans utiliser de câbles. Plusieurs normes existent pour répondre à différentes applications, comme **IrDA** pour les communications infrarouges, et diverses normes hertziennes telles que **GSM**, **GPRS**, **UMTS**, **LTE**, et **5G**. Les normes **IEEE 802.11 (Wi-Fi)**, **802.15 (Bluetooth)**, et **802.16 (WiMAX)** couvrent les communications à courte, moyenne et longue portée.
+
+### Fréquences
+
+Les fréquences utilisées pour les communications varient en fonction des applications :
+
+- **VLF (Very Low Frequencies)** : navigation maritime, sonar.
+- **LF (Low Frequencies)** : aéronautique, radio grandes ondes.
+- **MF (Medium Frequencies)** : SOS, radio OM.
+- **HF (High Frequencies)** : ISM, radio-diffusion sur onde courte.
+- **VHF (Very High Frequencies)** : radio numérique, FM, communications satellite LEO, trafic aérien.
+- **UHF (Ultra High Frequencies)** : télévision, téléphonie, GPS, communications satellite.
+- **SHF (Super High Frequencies)** : micro-ondes, communications satellite.
+- **EHF (Extremely High Frequencies)** : recherche spatiale.
+- **Bande ISM** : Industriel, Scientifique et Médical.
 
 
